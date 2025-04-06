@@ -1,0 +1,282 @@
+<doctype html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome (Icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts (Poppins) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./CSS/styles.css">
+<style>
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+.navbar {
+  background-color: transparent !important;
+  padding: 20px 0;
+  transition: background-color 0.3s;
+}
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.9) !important;
+}
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: url('./CSS/Images/hero_1.jpg') no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  color: white;
+}
+
+.hero-section img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 1px solid #00b4a0;
+  background: white;
+  color: #00b4a0;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-column {
+  flex: 1 1 200px;
+  max-width: 300px;
+}
+
+.footer-column h3 {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  color: #00b4a0;
+}
+
+.footer-column a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+  transition: color 0.3s;
+}
+
+.footer-column a:hover {
+  color: #00b4a0;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+}
+
+.subscribe input {
+  width: calc(100% - 50px);
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
+
+.subscribe button {
+  padding: 10px;
+  border: none;
+  background-color: #00b4a0;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid #555;
+  padding-top: 20px;
+  font-size: 0.9em;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: white;
+  margin: 0 10px;
+  font-size: 1.2em;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #00b4a0;
+}
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">HEPTA</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="./home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="./hotels.html">Hotels</a></li>
+          <li class="nav-item"><a class="nav-link" href="./news.html">News</a></li>
+          <li class="nav-item"><a class="nav-link  active" href="./contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<section class="hero-section">
+  <div class="container">
+    <div class="row justify-content-center align-items-center text-center">
+      <div class="col-lg-8">
+        <h1>Our Contacts</h1>
+        <p>Another free template by Colorlib</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <div class="container mt-5">
+  <form>
+    <div class="form-group">
+      <label>Name</label>
+      <input type="text" name="name" required>
+    </div>
+    <div class="form-group">
+      <label>Phone</label>
+      <input type="tel" name="phone" required>
+    </div>
+    <div class="form-group">
+      <label>Email</label>
+      <input type="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label>Write Message</label>
+      <textarea name="message" rows="5" required></textarea>
+    </div>
+    <button type="submit" class="text-center">Send Message</button>
+  </form>
+  </div>
+
+  <br>
+  <div class="container text-center mt-5">
+    <h4>Address:</h4>
+    <p><strong>98 West 21th Street, Suite 721 New York NY 10016</strong></p>
+  </div>
+  <div class="container text-center">
+    <h4>Phone Number:</h4>
+    <p><strong>3628468428</strong></p>
+  </div>
+  <div class="container text-center">
+    <h4>Email:</h4>
+    <p><strong>aakifahtasawar2004@gmail.com</strong></p>
+  </div>
+
+<div class="container text-center mt-5">
+  <h2 class="fw-bold">Happy Customers</h2>
+  <div class="row mt-4">
+    <div class="col-md-4 testimonial">
+      <img src="./CSS/Images/download(9).jpeg" alt="Photo of Clare Gupta" class="img-fluid rounded-circle">
+      <p>“Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts...”</p>
+      <h6>&mdash; Clare Gupta</h6>
+    </div>
+    <div class="col-md-4 testimonial">
+      <img src="./CSS/Images/download(3).jpeg" alt="Photo of Rogie Slater" class="img-fluid rounded-circle">
+      <p>“Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts...”</p>
+      <h6>&mdash; Rogie Slater</h6>
+    </div>
+    <div class="col-md-4 testimonial">
+      <img src="./CSS/Images/download(5).jpeg" alt="Photo of John Doe" class="img-fluid rounded-circle">
+      <p>“Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts...”</p>
+      <h6>&mdash; John Doe</h6>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-column">
+      <h3>Quick Links</h3>
+      <a href="#">About Us</a>
+      <a href="#">Terms & Conditions</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Help</a>
+      <a href="#">Rooms</a>
+    </div>
+    <div class="footer-column">
+      <h3>Support</h3>
+      <a href="#">Our Location</a>
+      <a href="#">The Hosts</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="#">Restaurant</a>
+    </div>
+    <div class="footer-column contact-info">
+      <h3>Contact Info</h3>
+      <p><strong>Address:</strong> 98 West 21th Street, Suite 721<br>New York NY 10016</p>
+      <p><strong>Phone:</strong> (+1) 435 3533</p>
+      <p><strong>Email:</strong> info@yourdomain.com</p>
+    </div>
+    <div class="footer-column subscribe">
+      <h3>Subscribe</h3>
+      <p>Sign up for our newsletter</p>
+      <input type="email" placeholder="Your email...">
+      <button><i class="fa fa-paper-plane"></i></button>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>Copyright &copy; 2025 All rights reserved | This template is made with <i class="fa fa-heart"></i> by Colorlib</p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./JS/script.js"></script>
+</body>
+</html>
